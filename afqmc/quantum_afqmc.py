@@ -486,7 +486,7 @@ def V_T():
         qml.CNOT(wires=[i, i + 1])
 
     qml.RZ(0.12, wires=3)
-    # qml.RZ(0.12, wires=3)
+    # qml.RZ(0, wires=3)
     for i in range(3)[::-1]:
         qml.CNOT(wires=[i, i + 1])
 
@@ -495,7 +495,7 @@ def V_T():
         qml.Hadamard(wires=i)
     #ここで位相をいじって、変化を見てみる（R_Zをかけてみる）
     # qml.RZ(-np.pi / 2.0, wires=0)
-    qml.RZ(-np.pi / 2.0, wires=3)
+    # qml.RZ(-np.pi / 2.0, wires=3)
     # qml.RZ(-np.pi/2, wires=3)
 
 

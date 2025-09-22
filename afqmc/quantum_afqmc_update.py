@@ -32,8 +32,8 @@ def V_T():
     for i in range(3):
         qml.CNOT(wires=[i, i + 1])
 
+    # qml.RZ(0, wires=3)
     qml.RZ(0.12, wires=3)
-    # qml.RZ(0.12, wires=3)
     for i in range(3)[::-1]:
         qml.CNOT(wires=[i, i + 1])
 
